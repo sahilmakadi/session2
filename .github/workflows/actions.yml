@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
           -  name: build
-             run: sleep 2s && echo build
+             run: sleep 4s && echo build
 
     deploy:
         runs-on: ubuntu-latest
