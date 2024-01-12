@@ -6,16 +6,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: test
-          run: sleep 3s && echo test
-    build:
-        runs-on: ubuntu-latest
-        steps: 
-          -  name: build
-             run: sleep 4s && echo build
-
-    deploy:
-        runs-on: ubuntu-latest
-        steps:
-          -  name: deploy
-             run: sleep 3s && echo deploy
-        
+          uses: actions/setup-node@v4
+          with:
+            node-version: '20.11.0'
+        - run: sleep 3s && echo test
+    
