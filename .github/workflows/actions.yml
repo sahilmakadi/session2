@@ -11,6 +11,6 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
           -  name: build
-             run: sleep 2m echo build
+             run: sleep 2m && echo build
               
         
